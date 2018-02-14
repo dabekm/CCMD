@@ -1,0 +1,22 @@
+{
+  "name": "ccmd-master",
+  "version": "1.0.0",
+  "description": "Client-side Web Design Project by Chris, Christy, Max, &amp; DJ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabekm/CCMD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dabekm/CCMD/issues"
+  },
+  "homepage": "https://github.com/dabekm/CCMD#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
