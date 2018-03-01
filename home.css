@@ -3,14 +3,29 @@ body {
   margin: auto;
   background: #fff;
   font-size: 16px;
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: "Arial", Georgia, Sans-Serif;
+}
+form{
+  text-align: right;
+  font-size: 12px;
+  padding: 2px;
+  margin: 0;
+}
+form button {
+  border-style: none;
+  background-color: white;
+  padding: 5px;
+}
+form button:hover {
+  background-color: #9bd0ff;
+  padding: 5px;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #5F8EE7;
+    background-color: #2B3D61;
 }
 li {
     float: left;
@@ -23,14 +38,24 @@ li a {
     text-decoration: none;
 }
 li a:hover {
-    background-color: #2B3D61;
+    background-color: #9bd0ff;
 }
 h3 {
   font-size: 1.75em;
-  color: #546994;
+  color: #2B3D61;
   margin: 15px;
   padding: 5px;
 }
-header {
-  border-bottom: 1px solid #dedede;
+.savedJobs, .appliedJobs, .interviews, .jobOffers{
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    float:left;
+    width: calc(25% - 10px);
+    height: 400px;
+    background-color: #9bd0ff;
+}
+h4{
+  margin: 5px;
+  border-style: none none solid none;
 }
