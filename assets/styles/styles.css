@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+}
+body {
+    min-height: 100%;
+    width: 850px;
+    margin: auto;
+    background: #fff;
+    font-size: 16px;
+    font-family: "Arial", Georgia, Sans-Serif;
+  }
+  form {
+    text-align: right;
+    font-size: 12px;
+    padding: 2px;
+    margin: 0;
+  }
+  form button {
+    border-style: none;
+    background-color: white;
+    padding: 5px;
+  }
+  form button:hover {
+    background-color: #9bd0ff;
+    padding: 5px;
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #2B3D61;
+  }
+  li {
+      float: left;
+  }
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 12px;
+      text-decoration: none;
+  }
+  li a:hover {
+      background-color: #9bd0ff;
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.75em;
+    color: #2B3D61;
+    margin: 15px;
+    padding: 5px;
+  }
+  h5 {
+    font-size: 1.1em;
+    color: #fff;
+    padding: 14px 12px;
+  }
+ .saved, .applied, .interviews, .offers {
+      display: inline-block;
+      position: relative;
+      margin: 5px;
+      float: left;
+      width: calc(25% - 10px);
+      height: 300px;
+      background-color: #9bd0ff;
+  }
+  h4 {
+    margin: 5px;
+    border-style: none none solid none;
+  }
+  footer {
+    margin: 350px 0 0 0;
+    position: relative;
+    bottom: 0;
+    width: 850px;
+    height: 40px;
+    background: #2B3D61;
+ }
