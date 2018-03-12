@@ -1,20 +1,32 @@
 html {
-  height: 100%;
+  min-height: 100%;
+  width:100%;
 }
 body {
     min-height: 100%;
-    width: 850px;
+    width: 100%;
     margin: auto;
     background: #fff;
     font-size: 16px;
     font-family: "Arial", Georgia, Sans-Serif;
-    background-image: url("tie.jpeg");
+    /* background-image: url("tie.jpeg");
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
     background-size: 20%;
-    border-image: none;
+    border-image: none; */
   }
+
+/* img {
+    width:200px;
+    height:100px;
+    border:none;
+    outline:none;
+    padding: 5px;
+    position:absolute;
+    top:0;
+    left:0;
+  } */
   form {
     text-align: right;
     font-size: 12px;
@@ -31,30 +43,42 @@ body {
     padding: 5px;
   }
   .tab{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+      margin: auto;
       overflow: hidden;
       background-color: #2B3D61;
+      padding: 5px;
+      
   }
   .tablinks {
-      float: left;
+     float: left;
+     margin: auto;
+     width: 20%;
   }
   .tablinks{
       display: block;
       color: white;
-      text-align: center;
       padding: 14px 58px;
       text-decoration: none;
       background-color: #2B3D61;
       border: none;
       outline: none;
+      margin: auto;
   }
   .tablinks:hover{
       background-color: #9bd0ff;
   }
+  .tabcontent{
+    padding-left: 20px;
+  }
+  .tabOrder{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  
   h1 {
     font-size: 1.75em;
+    padding-left: 20px;
   }
   h3 {
     font-size: 1.75em;
@@ -81,10 +105,16 @@ body {
     border-style: none none solid none;
   }
   footer {
-    margin: 350px 0 0 0;
+    margin: 340px 0 0 0;
     position: relative;
     bottom: 0;
-    width: 850px;
+    width: 100%;
     height: 40px;
     background: #2B3D61;
  }
+.login{
+  width:100%;
+}
+.aboutHelper{
+  padding-left:5px;
+}

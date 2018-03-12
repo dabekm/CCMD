@@ -11,6 +11,9 @@
 </head>
 
 <body>
+	<!-- Logo -->
+	<!-- <img src="./assets/styles/tie.jpeg" alt="Logo" width="600" height="600"> -->
+
 	<!-- document header -->
 	<header>
 		<!-- login forms -->
@@ -26,13 +29,14 @@
 		</section>
 		<!-- navigation menu -->
 		<section class="navigation">
-				<div id="tabs">
+				<div id="tabs" class="tabOrder">
 						<ul class="tab">
 								<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
 								<button class="tablinks" onclick="openCity(event, 'Jobs')">Jobs</button>
 								<button class="tablinks" onclick="openCity(event, 'Interview')">Interview Assistance</button>
 								<button class="tablinks" onclick="openCity(event, 'Finance')">Finances</button>
 								<button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us </button>
+						</div>
 
 						</ul>
 							  <div id="About" class="tabcontent">
@@ -84,11 +88,13 @@
 	<!-- document footer -->
 	<footer>
 		<h5>About Job Search Helper</h5>
+		<div class='aboutHelper'>
 		<p>Job Search Helper is a web application developed by Computer Science students at Loyola University Chicago. The project's
 			GitHub repository can be found
 			<a href="https://github.com/dabekm/CCMD">here</a>.</p>
 		<p>This application is being developed for Dr. Nick Hayward's Client-side Web Design class. The course site is available
 			<a href="http://csteach424.github.io">here</a>.</p>
+		</div>
 	</footer>
 	<!-- js scripts... -->
 	<script type="text/javascript" src="assets/scripts/opportunity.js"></script>
