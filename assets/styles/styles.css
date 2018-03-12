@@ -8,6 +8,12 @@ body {
     background: #fff;
     font-size: 16px;
     font-family: "Arial", Georgia, Sans-Serif;
+    background-image: url("tie.jpeg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: 20%;
+    border-image: none;
   }
   form {
     text-align: right;
