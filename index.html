@@ -26,40 +26,39 @@
 		</section>
 		<!-- navigation menu -->
 		<section class="navigation">
-				<div class="tabs">
-						<ul>
-							<li><a href="#item1">Home</a></li>
-							<li class="active"><a href="#item2">About</a></li>
-							<li><a href="#item3">Jobs</a></li>
-							<li><a href="#item4">Interview Assistance</a></li>
-							<li><a href="#item5">Statistics</a></li>
-							<li><a href="#item6">Contact Us</a></li>
+				<div id="tabs">
+						<ul class="tab">
+								<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+								<button class="tablinks" onclick="openCity(event, 'Jobs')">Jobs</button>
+								<button class="tablinks" onclick="openCity(event, 'Interview')">Interview Assistance</button>
+								<button class="tablinks" onclick="openCity(event, 'Finance')">Finances</button>
+								<button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us </button>
 
 						</ul>
-						<div class="tabInner">
-							<div id="item1">
-								sup
-							</div>
-							<div id="item2">
-								bla2fasd
-							</div>
-							<div id="item3">
-								bla3fasdfasdfsa
-							</div>
-							
-							<div id="item4">
-								99043fasdfsa
-							</div>
-						
-							<div id="item5">
-								5123dfasdfsa
-							</div>
-						
-							<div id="item6">
-								bla3f4324sdfsa
-							</div>
-						</div>
-					</div>
+							  <div id="About" class="tabcontent">
+								<h3>About Us</h3>
+								<p>Need a job? We can help.</p>
+							  </div>
+							  
+							  <div id="Jobs" class="tabcontent">
+								<h3>Job Openings</h3>
+								<p>There's a plethora of positions available in Computer Science!</p> 
+							  </div>
+							  
+							  <div id="Interview" class="tabcontent">
+								<h3>Interview Center</h3>
+								<p>Interviews are scary, that's why we are here to hold your hand.</p>
+							  </div>
+
+							  <div id="Finance" class="tabcontent">
+									<h3>Financial Statistics</h3>
+									<p>Welcome to the Job Hunt. Here you will find statistics on average salaries within your position, livable areas within your budget and more.</p>
+								  </div>
+
+							<div id="Contact" class="tabcontent">
+								<h3>One On One</h3>
+								<p>Something not going the way you want? Have some concerns or constructive critisism? Contact us here.</p>
+								</div>
 		</section>
 		<h1>Job Opportunities</h1>
 	</header>

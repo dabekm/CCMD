@@ -24,24 +24,27 @@ body {
     background-color: #9bd0ff;
     padding: 5px;
   }
-  ul, .tabs{
+  .tab{
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background-color: #2B3D61;
   }
-  li {
+  .tablinks {
       float: left;
   }
-  li a, button{
+  .tablinks{
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 12px;
+      padding: 14px 58px;
       text-decoration: none;
+      background-color: #2B3D61;
+      border: none;
+      outline: none;
   }
-  li a:hover{
+  .tablinks:hover{
       background-color: #9bd0ff;
   }
   h1 {
@@ -79,30 +82,3 @@ body {
     height: 40px;
     background: #2B3D61;
  }
- .tabs ul {
-  list-style: none;
-}
-
-.tabs ul li {
-  float: left;
-  border-bottom: none;
-  margin-right: 10px;
-  padding: 5px;
-}
-
-.tabs ul li.active {
-  margin-bottom: -1px;
-  padding-bottom: 6px;
-}
-
-.tabInner {
-  clear: both;
-  height: 200px;
-  overflow: hidden;
-}
-
-.tabInner div {
-  height: 200px;
-  padding: 10px;
-
-}
