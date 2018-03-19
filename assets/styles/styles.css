@@ -5,7 +5,7 @@ html {
 body {
     min-height: 100%;
     width: 100%;
-    margin: auto;
+    margin: 0 0 150px;
     background: #fff;
     font-size: 16px;
     font-family: "Arial", Georgia, Sans-Serif;
@@ -80,41 +80,84 @@ body {
     font-size: 1.75em;
     padding-left: 20px;
   }
+  h2 {
+    font-size: 1.1em;
+    margin: 10px 0 10px 0;
+    color: #fff;
+  }
   h3 {
     font-size: 1.75em;
     color: #2B3D61;
-    margin: 15px;
-    padding: 5px;
-  }
-  h5 {
-    font-size: 1.1em;
-    color: #fff;
-    padding: 14px 12px;
-  }
- .saved, .applied, .interviews, .offers {
-      display: inline-block;
-      position: relative;
-      margin: 5px;
-      float: left;
-      width: calc(25% - 10px);
-      height: 300px;
-      background-color: #9bd0ff;
   }
   h4 {
     margin: 5px;
     border-style: none none solid none;
   }
+  h5 {
+    font-size: 1.1em;
+    color: #fff;
+    padding: 10px 0 10px 20px;
+  }
+  /*p {
+    color: #fff;
+    padding: 0 0 0 20px;
+  }*/
+  a {
+    color: #fff;
+  }
+  .userIn {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    float: left;
+    width: calc(100% - 20px);
+    height: 150px;
+    background-color: #2B3D61;
+  }
+  .userIn p{
+    color: #fff;
+  }
+  .userIn input {
+    width: 40%;
+  }
+  .userIn button {
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 0;
+    border: 1px solid #dedede;
+    cursor: pointer;
+    background-color: white;
+  }
+  .userIn button:hover {
+    background-color: #9bd0ff;
+  }
+  .saved, .applied, .interviews, .offers {
+      display: inline-block;
+      position: relative;
+      margin: 5px;
+      float: left;
+      width: calc(25% - 10px);
+      height: 340px;
+      background-color: #9bd0ff;
+  }
+  main {
+    overflow: auto;
+    padding: 15px 0 15px 0;
+  }
   footer {
-    margin: 340px 0 0 0;
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 150px;
     background: #2B3D61;
- }
-.login{
+  }
+.login {
   width:100%;
 }
-.aboutHelper{
-  padding-left:5px;
+.aboutHelper {
+  padding-left: 20px;
+}
+.aboutHelper.p {
+  color: #fff;
 }
