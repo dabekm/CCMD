@@ -105,6 +105,14 @@ body {
   a {
     color: #fff;
   }
+  .signup{
+    color: rgb(8, 8, 8);
+    background-color: #9bd0ff;
+    padding: 5px;
+    border-style: none;
+    text-decoration: none;
+
+  }
   .userIn {
     display: inline-block;
     position: relative;
