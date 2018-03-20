@@ -22,13 +22,13 @@ function opportunity() {
       //object for wrapper html for note
       var $opp = $("<p>");
       //define input field
-      var $opp_text = $(".userIn input");
+      var $opp_text = $(".userIn input"); 
       //conditional check for input field
       if ($opp_text.val() !== "") {
       //set content for opportunity
       $opp.html($opp_text.val());
       //append opp text to Saved Job Opportunities
-      $(".userIn").append($opp);
+      $(".saved").append($opp);
       $opp_text.val("");
       }
     }
