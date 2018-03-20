@@ -19,7 +19,7 @@
 		<!-- login forms -->
 		<section class="login">
 			<form>
-				User name:
+				Username:
 				<input type="text" name="username"> 
 				Password:
 				<input type="password" name="password">
@@ -63,14 +63,24 @@
 								<h3>One On One</h3>
 								<p>Something not going the way you want? Have some concerns or constructive critisism? Contact us here.</p>
 								</div>
+							
+							
+								
+							
 		</section>
-		<h1>Job Opportunities</h1>
 	</header>
 	<!-- document main -->
 	<main>
+		<!-- user input -->
+		<section class="userIn">
+			<h2>Add a Job Opportunity</h2>
+			<input><button>add</button>
+		</section>
+		<h1>Job Opportunities for [username]</h1>
 		<!-- saved jobs -->
 		<section class="saved">
 			<h4>Saved</h4>
+			<div id='saveList'></div>
 		</section>
 		<!-- applied jobs -->
 		<section class="applied">
@@ -97,6 +107,7 @@
 		</div>
 	</footer>
 	<!-- js scripts... -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/scripts/opportunity.js"></script>
 </body>
 
