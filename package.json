@@ -1,0 +1,12 @@
+{
+  "name": "job-search-helper",
+  "version": "1.0.0",
+  "description": "job search helper web application",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "redis": "^2.8.0"
+  },
+  "author": "CCMD",
+  "license": "ISC"
+}
