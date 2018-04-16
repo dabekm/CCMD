@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.3",
-    "redis": "^2.8.0"
+    "redis": "^2.8.0",
+    "github-jobs": "^0.1.0"
   },
   "author": "CCMD",
   "license": "ISC"
