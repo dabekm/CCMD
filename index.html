@@ -110,12 +110,28 @@
 		</div>
 	</footer>
 
-
-
 	<!-- js scripts... -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/scripts/opportunity.js"></script>
 	<script type="text/javascript" src="assets/scripts/form.js"></script>
-</body>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDSpJongIcG9wl-cf4JNKn_liFrVLV3EYs",
+		authDomain: "comp-424.firebaseapp.com",
+		databaseURL: "https://comp-424.firebaseio.com",
+		projectId: "comp-424",
+		storageBucket: "comp-424.appspot.com",
+		messagingSenderId: "455233589867"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	</body>
 
 </html>
