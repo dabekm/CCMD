@@ -48,3 +48,21 @@ function opportunity() {
   };
 
 $(document).ready(opportunity);
+
+var login = document.getElementById("login");
+
+var pass= document.getElementById("pass");
+
+function signon() { 
+  
+  var loginCheck = login.value;
+  var passCheck = pass.value;
+
+
+  firebase.auth().signInWithEmailAndPassword(loginCheck, passCheck).catch(function(error) {
+    console.log(error.code);
+    console.log(error.message);
+  });
+
+  window.alert("working");
+}
