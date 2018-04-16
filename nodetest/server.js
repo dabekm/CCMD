@@ -4,10 +4,11 @@ http = require("http"),
 appTest;
 // create our server - listen on port 3030
 appTest = express();
-http.createServer(appTest).listen(3030);
-// set up routes
-appTest.get("/", function(req, res) {
-    res.send("Welcome to the Job Search Helper server. Append /index.html to the browser URL to view the home page.")
+http.createServer(appTest).listen(3000);
+// set up routesç
+appTest.use(express.static('../'));
+appTest.get("/register", function (req, res) {
+    res.sendfile(__dirname + "/SignUp.html")
     });
 //set up static file directory - default route for server
-appTest.use(express.static('../'));
+

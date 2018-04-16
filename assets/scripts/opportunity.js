@@ -64,5 +64,20 @@ function signon() {
     console.log(error.message);
   });
 
-  window.alert("working");
+  window.alert("Button Working");
+
+
+}
+
+function signout(){
+
+  firebase.auth().signOut().then(function() {
+
+    console.log("Logged out!")
+ }, function(error) {
+    console.log(error.code);
+    console.log(error.message);
+ });
+
+ widow.alert("Logged off!");
 }
