@@ -1,0 +1,179 @@
+html {
+  min-height: 100%;
+  width:100%;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0 0 150px;
+    background: #e6e6e6;
+    font-size: 16px;
+    font-family: "Arial", Georgia, Sans-Serif;
+    /* background-image: url("tie.jpeg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: 20%;
+    border-image: none; */
+  }
+
+/* img {
+    width:200px;
+    height:100px;
+    border:none;
+    outline:none;
+    padding: 5px;
+    position:absolute;
+    top:0;
+    left:0;
+  } */
+  form {
+    text-align: right;
+    font-size: 12px;
+    padding: 2px;
+    margin: 0;
+  }
+  form button {
+    border-style: none;
+    color: #fff;
+    background-color: #a3c2ff;
+    padding: 5px;
+  }
+  form button:hover {
+    background-color: #cccccc;
+    padding: 5px;
+  }
+  .tab{
+      margin: auto;
+      overflow: hidden;
+      background-color: #2250a8;
+      padding: 5px;
+      
+  }
+  .tablinks {
+     float: left;
+     margin: auto;
+     width: 20%;
+  }
+  .tablinks{
+      display: block;
+      color: white;
+      padding: 14px 58px;
+      text-decoration: none;
+      background-color: #2250a8;
+      border: none;
+      outline: none;
+      margin: auto;
+  }
+  .tablinks:hover{
+      background-color: #a3c2ff;
+  }
+  .tabcontent{
+    padding-left: 10px;
+  }
+  .tabOrder{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 1.75em;
+    padding-left: 20px;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin: 10px 0 10px 0;
+    color: #fff;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    margin: 5px;
+    border-style: none none solid none;
+  }
+  h5 {
+    font-size: 1.1em;
+    color: #fff;
+    padding: 10px 0 10px 20px;
+  }
+  .col-4 p {
+    font-size: 1.5em;
+    color: black;
+    padding: 30px;
+    background: #a3c2ff;
+  }
+  a {
+    color: #fff;
+  }
+  .signup{
+    color: rgb(8, 8, 8);
+    background-color: #a3c2ff;
+    padding: 5px;
+    border-style: none;
+    text-decoration: none;
+  }
+  .userIn {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    float: left;
+    width: calc(100% - 20px);
+    height: 150px;
+    background-color: #2250a8;
+  }
+  .userIn p{
+    color: #fff;
+  }
+  .userIn input {
+    width: 40%;
+  }
+  .userIn button {
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 0;
+    border: 1px solid #dedede;
+    cursor: pointer;
+    background-color: white;
+  }
+  .userIn button:hover {
+    background-color: #a3c2ff;
+  }
+  .saved, .applied, .interviews, .offers {
+      display: inline-block;
+      position: relative;
+      margin: 5px;
+      float: left;
+      width: calc(25% - 10px);
+      height: 340px;
+      background-color: #a3c2ff;
+  }
+  main {
+    overflow: auto;
+    padding: 15px 0 15px 0;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 248px;
+    width: 256px;
+  }
+  footer {
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: #2250a8;
+  }
+.login {
+  width:100%;
+}
+.aboutHelper {
+  padding-left: 20px;
+}
+.aboutHelper.p {
+  color: #fff;
+}

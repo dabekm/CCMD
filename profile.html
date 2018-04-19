@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=“UTF-8”>
+	<title>Job Search Helper: Profile</title>
+	<meta name="description" content="The profile page of a web application designed to help job seekers.">
+	<meta name="author" content="Chris, Christy, Max, DJ">
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/grid.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/profilepagestyles.css">
+
+</head>
+
+<body>
+	<!-- document header -->
+	<header>
+		<!-- login forms -->
+		<section class="login">
+			<form>
+				Username:
+				<input type="text" name="username" id="login" placeholder="email"> 
+				Password:
+				<input type="password" id="pass" name="password" placeholder="password">
+				<button type="button" onclick="signon()" a href="profile.html">Log In</button>
+				<button class="signup"><a href="SignUp.html">Sign up</a></button>
+			
+
+			</form>
+		</section>
+		<!-- navigation menu -->
+		<section class="navigation">
+				<div id="tabs" class="tabOrder">
+						<ul class="tab">
+								<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+								<button class="tablinks" onclick="openCity(event, 'Jobs')">Jobs</button>
+								<button class="tablinks" onclick="openCity(event, 'Interview')">Interview Assistance</button>
+								<button class="tablinks" onclick="openCity(event, 'Finance')">Finances</button>
+								<button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us </button>
+						</div>
+
+						</ul>
+							  <div id="About" class="tabcontent">
+								<h3>About Us</h3>
+								<p>Need a job? We can help.</p>
+							  </div>
+							  
+							  <div id="Jobs" class="tabcontent">
+								<h3>Job Openings</h3>
+								<p>There's a plethora of positions available in Computer Science!</p> 
+							  </div>
+							  
+							  <div id="Interview" class="tabcontent">
+								<h3>Interview Center</h3>
+								<p>Interviews are scary, that's why we are here to hold your hand.</p>
+							  </div>
+
+							  <div id="Finance" class="tabcontent">
+									<h3>Financial Statistics</h3>
+									<p>Welcome to the Job Hunt. Here you will find statistics on average salaries within your position, livable areas within your budget and more.</p>
+								  </div>
+
+							<div id="Contact" class="tabcontent">
+								<h3>One On One</h3>
+								<p>Something not going the way you want? Have some concerns or constructive critisism? Contact us here.</p>
+								</div>
+							
+							
+								
+							
+		</section>
+	</header>
+	<!-- document main -->
+	<main>
+        <h3>Profile Page for [username]</h3>
+        <div class="row">
+            <div class="col-4">
+                <img src="./assets/images/user-male-icon.png"></img>
+            </div>
+            <div class="col-4">
+                <p>Name: Max Dabek</p>
+                <p>Username: max@max.com</p>
+            </div>
+            <div class="col-4">
+                <p>Major: Computer Science</p>
+                <p>Location: Chicago, IL</p>
+            </div>
+        </div>
+	</main>
+	<!-- document footer -->
+	<footer style="background:#e6e6e6;">
+	</footer>
+
+	<!-- js scripts... -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/opportunity.js"></script>
+	<script type="text/javascript" src="assets/scripts/form.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDSpJongIcG9wl-cf4JNKn_liFrVLV3EYs",
+		authDomain: "comp-424.firebaseapp.com",
+		databaseURL: "https://comp-424.firebaseio.com",
+		projectId: "comp-424",
+		storageBucket: "comp-424.appspot.com",
+		messagingSenderId: "455233589867"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	</body>
+
+</html>
