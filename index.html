@@ -19,12 +19,12 @@
 	<header>
 		<!-- login forms -->
 		<section class="login">
-			<form>
+			<form onkeypress="return event.keyCode != 12">
 				Username:
-				<input type="text" name="username" id="login" placeholder="email"> 
+				<input type="email" name="username" id="email_field"  placeholder="email"> 
 				Password:
-				<input type="password" id="pass" name="password" placeholder="password">
-				<button type="button" onclick="signon()" a href="profile.html">Log In</button>
+				<input type="password" id="password_field" name="password" placeholder="password">
+				<button type="button" id="login-btn" onclick="login()">Log In</button>
 				<button class="signup"><a href="SignUp.html">Sign up</a></button>
 			
 

@@ -24,14 +24,19 @@ function submitClick() {
 
     var lastName = last.value;
 
-    firebaseRef.push().set(authSave);
+    firebaseRef.push().set({
+        email: authSave,
+        pass: passSave,
+        first_name: firstName,
+        last_name:lastName
+    })
+    window.alert("Working:Database");
+};
 
-    firebaseRef.push().set(passSave);
+//fixed that weird thing with the enter button
 
-    firebaseRef.push().set(lastName);
-
-    firebaseRef.push().set(firstName);
-
-    window.alert("Working");
-
+document.onkeydown=function(){
+    if(window.event.keyCode=='13'){
+        submitClick();
+    }
 }

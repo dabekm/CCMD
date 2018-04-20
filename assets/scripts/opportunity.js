@@ -49,35 +49,48 @@ function opportunity() {
 
 $(document).ready(opportunity);
 
-var login = document.getElementById("login");
 
-var pass= document.getElementById("pass");
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
 
-function signon() { 
-  
-  var loginCheck = login.value;
-  var passCheck = pass.value;
+    function profilePage(){
 
+      window.location.href = "profile.html";
 
-  firebase.auth().signInWithEmailAndPassword(loginCheck, passCheck).catch(function(error) {
-    console.log(error.code);
-    console.log(error.message);
+    };
+
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+
+    }
+
+  } else {
+    // No user is signed in.
+  }
+});
+
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+
+    // ...
   });
-
-  window.alert("Button Working");
-
 
 }
 
-function signout(){
-
-  firebase.auth().signOut().then(function() {
-
-    console.log("Logged out!")
- }, function(error) {
-    console.log(error.code);
-    console.log(error.message);
- });
-
- widow.alert("Logged off!");
+function logout(){
+  firebase.auth().signOut();
 }
