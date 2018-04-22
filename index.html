@@ -12,64 +12,51 @@
 </head>
 
 <body>
-	<!-- Logo -->
-	<!-- <img src="./assets/styles/tie.jpeg" alt="Logo" width="600" height="600"> -->
-
 	<!-- document header -->
 	<header>
-		<!-- login forms -->
+		<!-- login forms and space for logo -->
 		<section class="login">
+			<a href="index.html"><img src="./assets/images/tie.png" height=80 width=120></a>
 			<form onkeypress="return event.keyCode != 12">
 				Username:
-				<input type="email" name="username" id="email_field"  placeholder="email"> 
-				Password:
+				<input type="email" name="username" id="email_field" placeholder="email"> Password:
 				<input type="password" id="password_field" name="password" placeholder="password">
-				<button type="button" id="login-btn" onclick="login()">Log In</button>
-				<button class="signup"><a href="SignUp.html">Sign up</a></button>
-			
+				<button type="button" id="login-btn" onclick="login()"><a href="" style="color:#fff">Log in</a></button>
+				<button class="signup">
+					<a href="SignUp.html">Sign up</a>
+				</button>
+
 
 			</form>
 		</section>
 		<!-- navigation menu -->
 		<section class="navigation">
-				<div id="tabs" class="tabOrder">
-						<ul class="tab">
-								<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
-								<button class="tablinks" onclick="openCity(event, 'Jobs')">Jobs</button>
-								<button class="tablinks" onclick="openCity(event, 'Interview')">Interview Assistance</button>
-								<button class="tablinks" onclick="openCity(event, 'Finance')">Finances</button>
-								<button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us </button>
-						</div>
+			<div id="tabs" class="tabOrder">
+				<ul class="tab">
+					<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+					<button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+					<button class="tablinks" onclick="window.open('https://jobs.github.com');">Jobs</button>
+					<button class="tablinks" onclick="location.href='profile.html';">Profile
+					</button>
+			</div>
 
-						</ul>
-							  <div id="About" class="tabcontent">
-								<h3>About Us</h3>
-								<p>Need a job? We can help.</p>
-							  </div>
-							  
-							  <div id="Jobs" class="tabcontent">
-								<h3>Job Openings</h3>
-								<p>There's a plethora of positions available in Computer Science!</p> 
-							  </div>
-							  
-							  <div id="Interview" class="tabcontent">
-								<h3>Interview Center</h3>
-								<p>Interviews are scary, that's why we are here to hold your hand.</p>
-							  </div>
+			</ul>
+			<div id="About" class="tabcontent">
+				<h3>About Us</h3>
+				<p>Job Search Helper is a web application developed by Computer Science students at Loyola University Chicago. The project's
+					GitHub repository can be found
+					<a href="https://github.com/dabekm/CCMD" target="_blank">here</a>.</p>
+				<p>This application is being developed for Dr. Nick Hayward's Client-side Web Design class. The course site is available
+					<a href="http://csteach424.github.io" target="_blank">here</a>.</p>
+			</div>
 
-							  <div id="Finance" class="tabcontent">
-									<h3>Financial Statistics</h3>
-									<p>Welcome to the Job Hunt. Here you will find statistics on average salaries within your position, livable areas within your budget and more.</p>
-								  </div>
+			<div id="Contact" class="tabcontent">
+					<h3>Contact Us</h3>
+					<p>Comments, questions, or concerns may be directed to <a href="mailto:mdabek@luc.edu">Max Dabek</a> and <a href="mailto:chuang@luc.edu">Chris Huang</a>.</p>
+			</div>
 
-							<div id="Contact" class="tabcontent">
-								<h3>One On One</h3>
-								<p>Something not going the way you want? Have some concerns or constructive critisism? Contact us here.</p>
-								</div>
-							
-							
-								
-							
+			<div id="Jobs" class="tabcontent"></div>
+			<div id="Profile" class="tabcontent"></div>
 		</section>
 	</header>
 	<!-- document main -->
@@ -77,13 +64,13 @@
 		<!-- user input -->
 		<section class="userIn">
 			<h2>Add a Job Opportunity</h2>
-			<input><button>add</button>
+			<input>
+			<button>add</button>
 		</section>
 		<h1>Job Opportunities for [username]</h1>
 		<!-- saved jobs -->
 		<section class="saved">
 			<h4>Saved</h4>
-			<div id='saveList'></div>
 		</section>
 		<!-- applied jobs -->
 		<section class="applied">
@@ -100,14 +87,7 @@
 	</main>
 	<!-- document footer -->
 	<footer>
-		<h5>About Job Search Helper</h5>
-		<div class='aboutHelper'>
-		<p>Job Search Helper is a web application developed by Computer Science students at Loyola University Chicago. The project's
-			GitHub repository can be found
-			<a href="https://github.com/dabekm/CCMD">here</a>.</p>
-		<p>This application is being developed for Dr. Nick Hayward's Client-side Web Design class. The course site is available
-			<a href="http://csteach424.github.io">here</a>.</p>
-		</div>
+
 	</footer>
 
 	<!-- js scripts... -->
@@ -120,18 +100,18 @@
 	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
 
 	<script>
-	// Initialize Firebase
-	var config = {
-		apiKey: "AIzaSyDSpJongIcG9wl-cf4JNKn_liFrVLV3EYs",
-		authDomain: "comp-424.firebaseapp.com",
-		databaseURL: "https://comp-424.firebaseio.com",
-		projectId: "comp-424",
-		storageBucket: "comp-424.appspot.com",
-		messagingSenderId: "455233589867"
-	};
-	firebase.initializeApp(config);
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyDSpJongIcG9wl-cf4JNKn_liFrVLV3EYs",
+			authDomain: "comp-424.firebaseapp.com",
+			databaseURL: "https://comp-424.firebaseio.com",
+			projectId: "comp-424",
+			storageBucket: "comp-424.appspot.com",
+			messagingSenderId: "455233589867"
+		};
+		firebase.initializeApp(config);
 	</script>
 
-	</body>
+</body>
 
 </html>

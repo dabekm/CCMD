@@ -8,71 +8,61 @@
 	<meta name="author" content="Chris, Christy, Max, DJ">
     <!-- css styles -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/grid.css">
-	<link rel="stylesheet" type="text/css" href="./assets/styles/profilepagestyles.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
 
 </head>
 
 <body>
 	<!-- document header -->
 	<header>
-		<!-- login forms -->
-		<section class="login">
-			<form>
-				Username:
-				<input type="text" name="username" id="login" placeholder="email"> 
-				Password:
-				<input type="password" id="pass" name="password" placeholder="password">
-				<button type="button" onclick="signon()" a href="profile.html">Log In</button>
-				<button class="signup"><a href="SignUp.html">Sign up</a></button>
-			
-
-			</form>
-		</section>
-		<!-- navigation menu -->
-		<section class="navigation">
+			<!-- login forms and space for logo -->
+			<section class="login">
+				<a href="index.html"><img src="./assets/images/tie.png" height=80 width=120></a>
+				<form onkeypress="return event.keyCode != 12">
+					Username:
+					<input type="email" name="username" id="email_field" placeholder="email"> Password:
+					<input type="password" id="password_field" name="password" placeholder="password">
+					<button type="button" id="login-btn" onclick="login()"><a href="" style="color:#fff">Log in</a></button>
+					<button class="signup">
+						<a href="SignUp.html">Sign up</a>
+					</button>
+	
+	
+				</form>
+			</section>
+			<!-- navigation menu -->
+			<section class="navigation">
 				<div id="tabs" class="tabOrder">
-						<ul class="tab">
-								<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
-								<button class="tablinks" onclick="openCity(event, 'Jobs')">Jobs</button>
-								<button class="tablinks" onclick="openCity(event, 'Interview')">Interview Assistance</button>
-								<button class="tablinks" onclick="openCity(event, 'Finance')">Finances</button>
-								<button class="tablinks" onclick="openCity(event, 'Contact')">Contact Us </button>
-						</div>
-
-						</ul>
-							  <div id="About" class="tabcontent">
-								<h3>About Us</h3>
-								<p>Need a job? We can help.</p>
-							  </div>
-							  
-							  <div id="Jobs" class="tabcontent">
-								<h3>Job Openings</h3>
-								<p>There's a plethora of positions available in Computer Science!</p> 
-							  </div>
-							  
-							  <div id="Interview" class="tabcontent">
-								<h3>Interview Center</h3>
-								<p>Interviews are scary, that's why we are here to hold your hand.</p>
-							  </div>
-
-							  <div id="Finance" class="tabcontent">
-									<h3>Financial Statistics</h3>
-									<p>Welcome to the Job Hunt. Here you will find statistics on average salaries within your position, livable areas within your budget and more.</p>
-								  </div>
-
-							<div id="Contact" class="tabcontent">
-								<h3>One On One</h3>
-								<p>Something not going the way you want? Have some concerns or constructive critisism? Contact us here.</p>
-								</div>
-							
-							
-								
-							
-		</section>
-	</header>
+					<ul class="tab">
+						<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+						<button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+						<button class="tablinks" onclick="window.open('https://jobs.github.com');">Jobs</button>
+						<button class="tablinks" onclick="location.href='profile.html';">Profile
+						</button>
+				</div>
+	
+				</ul>
+				<div id="About" class="tabcontent">
+					<h3>About Us</h3>
+					<p>Job Search Helper is a web application developed by Computer Science students at Loyola University Chicago. The project's
+						GitHub repository can be found
+						<a href="https://github.com/dabekm/CCMD" target="_blank">here</a>.</p>
+					<p>This application is being developed for Dr. Nick Hayward's Client-side Web Design class. The course site is available
+						<a href="http://csteach424.github.io" target="_blank">here</a>.</p>
+				</div>
+	
+				<div id="Contact" class="tabcontent">
+						<h3>Contact Us</h3>
+						<p>Comments, questions, or concerns may be directed to <a href="mailto:mdabek@luc.edu">Max Dabek</a> and <a href="mailto:chuang@luc.edu">Chris Huang</a>.</p>
+				</div>
+	
+				<div id="Jobs" class="tabcontent"></div>
+				<div id="Profile" class="tabcontent"></div>
+			</section>
+		</header>
 	<!-- document main -->
 	<main>
-        <h3>Profile Page for [username]</h3>
+        <h3 style="padding-left:10px;">Profile Page for [username]</h3>
         <div class="row">
             <div class="col-4">
                 <img src="./assets/images/user-male-icon.png"></img>

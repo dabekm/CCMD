@@ -13,6 +13,7 @@ function openCity(evt, tabName) {
 }
 
 document.getElementById("defaultOpen").click();
+document.getElementById("About").style.display = "none";
 
 //overall app logic and loader...
 function opportunity() {
