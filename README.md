@@ -27,8 +27,4 @@ Client-side Web Design Project by Chris, Christy, Max, &amp; DJ
 
 > Navigate to https://nodejs.org/en/download/. Download and install Node.js for your operating system. Once Node.js is installed, open the command line and or terminal and navigate to the directory where you cloned the CCMD repository. Type "npm install" to perform a local install of Node Package Manager and the dependencies specified in package.json. 
 
-<<<<<<< HEAD
 > Change your working directory to CCMD/nodetest, and then type "node server.js". Open a web browser of your choice and navigate to http://localhost:3000/. You are now viewing the home page of Job Search Helper. 
-=======
-> Change your working directory to CCMD/nodetest, and then type "node server.js". Open a web browser of your choice and navigate to http://localhost:3000/. You are now viewing the home page of Job Search Helper. 
->>>>>>> f9eb56dfc1303da2064d42cfbc009cc75a114ff2
