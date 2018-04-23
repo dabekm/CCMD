@@ -1,8 +1,8 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Georgia, Sans-Serif;
   background:#3498db;
   margin: 0 auto 0 auto;  
-  width:100%; 
+  width: calc(100% - 10px);
   text-align:center;
   margin: 20px 0px 20px 0px;   
 }
