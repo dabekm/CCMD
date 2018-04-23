@@ -1,0 +1,41 @@
+{
+  "jobTitle": [{
+    "id": "40af75b0-43da-11e8-8421-06fdf93a68d5",
+    "created_at": "Thu Apr 19 14:02:55 UTC 2018",
+    "title": "Lead Software Engineer/Architect",
+    "location": "New York, NY",
+    "type": "Full Time",
+    "description": "<p><strong>Overview:</strong></p>\n\n<p>The Expert…",
+    "how_to_apply": "<p>You can apply on our Company website:</p>\n\n<p><a href=…",
+    "company": "The Expert Institute",
+    "company_url": "https://www.theexpertinstitute.com/",
+    "company_logo": "http://github-jobs.s3.amazonaws.com/3510b2f0-43da-11e8-8cd8-a829b89239c9.png",
+    "url": "http://jobs.github.com/positions/40af75b0-43da-11e8-8421-06fdf93a68d5"
+  },
+    {
+      "id": "b6267848-433a-11e8-998a-b0eef57bee5c",
+      "created_at": "Wed Apr 18 19:00:39 UTC 2018",
+      "title": "Systems Engineer",
+      "location": "Brooklyn",
+      "type": "Full Time",
+      "description": "<p>The Systems Engineer will get the opportunity to influence the architec…",
+      "how_to_apply": "<p><a href=\"https://grnh.se/sgt7yu2#app\">https://grnh.se…",
+      "company": "Jackpocket",
+      "company_url": "http://Jackpocket",
+      "company_logo": "http://github-jobs.s3.amazonaws.com/b05df54e-433a-11e8-8222-0ee3ea23d081.png",
+      "url": "http://jobs.github.com/positions/b6267848-433a-11e8-998a-b0eef57bee5c"
+    },
+    {
+      "id": "40af75b0-43da-11e8-8421-06fdf93a68d5",
+      "created_at": "Thu Apr 19 14:02:55 UTC 2018",
+      "title": "Lead Software Engineer/Architect",
+      "location": "New York, NY",
+      "type": "Full Time",
+      "description": "<p><strong>Overview:</strong></p>\n\n<p>The Expert…",
+      "how_to_apply": "<p>You can apply on our Company website:</p>\n\n<p><a href=…",
+      "company": "The Expert Institute",
+      "company_url": "https://www.theexpertinstitute.com/",
+      "company_logo": "http://github-jobs.s3.amazonaws.com/3510b2f0-43da-11e8-8cd8-a829b89239c9.png",
+      "url": "http://jobs.github.com/positions/40af75b0-43da-11e8-8421-06fdf93a68d5"
+    }]
+}
