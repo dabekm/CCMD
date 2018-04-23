@@ -14,7 +14,7 @@ var password = document.getElementById("password");
 
 function submitClick() {
 
-    var firebaseRef = firebase.database().ref();
+    var firebaseRef = firebase.database().ref("users");
 
     var authSave = email.value;
 
