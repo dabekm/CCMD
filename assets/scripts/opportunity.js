@@ -92,15 +92,19 @@ function login(){
   })
 }
 
-function logOut(){
-
-  firebase.auth().signOut();
+function EmailLogOut(){
   console.log("Logged Out");
+  var user = firebase.auth().currentUser;
 
-  if(user = null){
-
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    window.alert("Log out successful");
     window.location.href = "index.html";
 
-  }
+  }).catch(function(error) {
+    // An error happened.
+    window.alert("bad");
+
+  });
 
 }
