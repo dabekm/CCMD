@@ -51,31 +51,10 @@ function opportunity() {
 $(document).ready(opportunity);
 
 
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-
-    function profilePage(){
-
-      window.location.href = "profile.html";
-
-    };
-
-    var user = firebase.auth().currentUser;
-
-    if(user != null){
-
-      var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-
-    }
-
-  } else {
-    // No user is signed in.
-  }
-});
 
 function login(){
+
+  console.log("user is signed in");
 
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
@@ -90,8 +69,38 @@ function login(){
     // ...
   });
 
+  var user = firebase.auth().currentUser;
+
+  firebase.auth().onAuthStateChanged(function(user) {
+
+    if (user) {
+      
+      console.log("user is signed in");
+  
+      if(user != null){
+  
+        var email_id = user.email;
+        window.alert("Log in successful");
+
+        window.location.href = "profile.html";
+  
+      }
+  
+    } else {
+      console.log("else");
+    }
+  })
 }
 
-function logout(){
+function logOut(){
+
   firebase.auth().signOut();
+  console.log("Logged Out");
+
+  if(user = null){
+
+    window.location.href = "index.html";
+
+  }
+
 }
