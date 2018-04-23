@@ -16,7 +16,6 @@ body {
     text-align: right;
     font-size: 12px;
     padding: 2px;
-    padding-top: 48px;
     margin: 0;
   }
   form button {
@@ -148,7 +147,6 @@ body {
     color: #2250a8;
   }
   .saved, .applied, .interviews, .offers {
-      display: inline-block;
       position: relative;
       margin: 5px 10px 5px 0px;
       float: left;
