@@ -139,14 +139,10 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
   .flex-item {
     flex-basis: 300px;
     flex-grow: 1;
-  }
-  .job-output h4 {
-
   }
   .job-output a{
     color: #2250a8;
