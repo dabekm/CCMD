@@ -172,9 +172,9 @@ body {
 .login_sec {
   width:100%;
 }
-.login a {
+.login_sec a {
   display:inline-block;
 }
-.login form {
+.login_sec form {
   float: right;
 }
