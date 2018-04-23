@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html style="height:100%;background:#e6e6e6">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href= "./assets/styles/loginstyle.css">
+		<a href="index.html"><img src="./assets/images/tie.png" height=80 width=120></a>
+		<title>JSH: Login Page</title>
+	</head>
+	
+	<form method="post" action="index.html">
+	<div class="box">
+	<h1>Log in to Job Search Helper</h1>
+
+	<!-- initial email login field -->
+	<input type="email" name="email" value="email" onFocus="field_focus(this,'email');" onblur="field_blur(this,'email');" class="email"/>
+	<!-- initial password enter field -->
+	<input type="password" name="email" value="email" onFocus="field_focus(this,'email');" class="email" />
+	
+	<!-- sign in button-->
+	<a href="profile.html#marker"> <!-- # mean null val, can replace with entire link, https://goo.gl/yWN265 -->
+	<div class="btn">Sign In</div></a> <!-- Finish of button 1-->
+	
+	<a href="SignUp.html#marker"><div id="btn2">Sign Up</div></a> <!--end of button 2-->
+	
+	</div> <!-- end box-->
+	
+	<p>Don't remember your password? No worries! <u style=color:#flc40f;">Click Here </u></p> <!-- replace u tag with span or em -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/scripts/form.js"></script>
+
+</html>
+
