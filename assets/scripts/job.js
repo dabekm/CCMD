@@ -2,11 +2,11 @@
 function loadApp() {
     "use strict";
 
-    function buildNote(data1,data2,data3,data4,data5) {
+    function buildNote(data1,data2,data3) {
         //create each note's <p>
         var p = $("<p class='flex-item'>");
         //add note text
-        p.html("<h4>" + data1 + "</h4>" + data2 + "\n" + data3+ "\n" + data4 + "\n" + "<a href =\"" + data5 + "\">Link</a>");
+        p.html("<h4>" + data1 + "</h4>Company: " + data2 + "\n" + "<a href =\"" + data3 + "\">Link</a>");
         //append to DOM
         $(".job-output").append(p);
     }
@@ -24,8 +24,8 @@ function loadApp() {
     //test with .then()
     getNotes().then(function(response1) {
         //output test to DOM
-        for (var i = 0; i<2; i++) {
-            buildNote(response1.jobTitle[i].title,response1.jobTitle[i].location,response1.jobTitle[i].type,response1.jobTitle[i].company,response1.jobTitle[i].url);
+        for (var i = 0; i<6; i++) {
+            buildNote(response1.jobTitle[i].title,response1.jobTitle[i].company,response1.jobTitle[i].url);
         }
         return getNotes();
     });
