@@ -14,7 +14,7 @@ var password = document.getElementById("password");
 
 function submitClick() {
 
-    var firebaseRef = firebase.database().ref();
+    var firebaseRef = firebase.database().ref("users");
 
     var authSave = email.value;
 
@@ -30,6 +30,20 @@ function submitClick() {
         first_name: firstName,
         last_name:lastName
     })
+
+    firebase.auth().createUserWithEmailAndPassword(authSave, passSave).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/weak-password') {
+          alert('The password is too weak.');
+        } else {
+          alert(errorMessage);
+        }
+        console.log(error);
+        // [END_EXCLUDE]
+      });
     window.alert("Working:Database");
 };
 
