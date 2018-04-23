@@ -115,7 +115,7 @@ body {
     position: relative;
     padding-left: 10px;
     width: calc(100% - 20px);
-    height: 150px;
+    height: 100px;
     background-color: #2250a8;
   }
   .userIn p{
@@ -134,6 +134,22 @@ body {
   }
   .userIn button:hover {
     background-color: #a3c2ff;
+  }
+  .job-output {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .flex-item {
+    flex-basis: 300px;
+    flex-grow: 1;
+  }
+  .job-output h4 {
+
+  }
+  .job-output a{
+    color: #2250a8;
   }
   .saved, .applied, .interviews, .offers {
       display: inline-block;
