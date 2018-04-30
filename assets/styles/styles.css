@@ -147,7 +147,7 @@ body {
   .job-output a{
     color: #2250a8;
   }
-  .saved, .applied, .interviews {
+  .saved, .embeddedsearch, .interviews {
       position: relative;
       margin: 5px 10px 5px 0px;
       float: left;
