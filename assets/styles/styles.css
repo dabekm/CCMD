@@ -147,11 +147,11 @@ body {
   .job-output a{
     color: #2250a8;
   }
-  .saved, .applied, .interviews, .offers {
+  .saved, .applied, .interviews {
       position: relative;
       margin: 5px 10px 5px 0px;
       float: left;
-      width: calc(25% - 10px);
+      width: calc(33% - 6px);
       height: 440px;
       background-color: #a3c2ff;
   }
